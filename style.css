@@ -14,6 +14,17 @@ h1 {
     font-size: 70px;
 }
 
+h3 {
+    font-size: 25px;
+    padding: 15px;
+}
+
+hr {
+    width: 80%;
+    margin: 30px;
+    border: .1px solid rgb(67, 67, 67);
+}
+
 /* Header part */
 .top-area {
     height: 646px;
@@ -125,9 +136,24 @@ h1 {
 
 /* Footer style */
 footer {
-    height: 444px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 400px;
     margin-top: 90px;
     padding: 40px;
+    
     background-color: #161616;
     color: white;
+}
+
+.bot-list ul {
+    display: flex;
+
+}
+
+.bot-list ul>li {
+    list-style: none;
+    margin-left: 30px;
+    font-size: 12px;
 }
