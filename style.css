@@ -48,6 +48,7 @@ h1 {
 /* Main part */
 .main-part {
     display: flex;
+    margin-top: 60px;
 }
 
 .left-nav {
@@ -119,4 +120,14 @@ h1 {
 }
 .blog-info p {
     padding-right: 10px;
+}
+
+
+/* Footer style */
+footer {
+    height: 444px;
+    margin-top: 90px;
+    padding: 40px;
+    background-color: #161616;
+    color: white;
 }
