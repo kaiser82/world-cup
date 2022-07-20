@@ -136,6 +136,9 @@ hr {
     padding-right: 10px;
 }
 
+.special {
+    display: none;
+}
 
 /* Footer style */
 footer {
@@ -178,7 +181,8 @@ footer {
         width: 100%;
         height: auto;
         padding: 20px 30px 0px 30px;
-        margin-bottom: 5px 0px;
+        margin: 5px 0px;
+        border-radius: 10px;
         flex-direction: column;
         text-align: center;
     }
@@ -217,6 +221,7 @@ footer {
     }
     footer {
         margin-top: 25px;
+        width: 100%;
     }
 
     .bot-list ul {
@@ -258,8 +263,27 @@ footer {
         grid-template-columns: repeat(2, 1fr);
         margin-left: 0px;
     }
+    .right-main:nth-last-child(){
+        display: none;
+    }
     .blog-box {
         width: 350px;
         height: 415px;
+    }
+    .special {
+        margin-top: 30px;
+        display: flex;
+        justify-content: center;
+    }
+    .special a {
+        text-decoration: none;
+        background-color: #DD0000;
+        color: white;
+        font-size: 20px;
+        padding: 10px 30px;
+        border-radius: 5px;
+    }
+    footer {
+        margin-top: 30px;
     }
 }
