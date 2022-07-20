@@ -89,12 +89,14 @@ hr {
     text-align: center;
     background-color: white;
     margin: 10px;
+    border: 1px solid lightgray;
     border-radius: 10px;
     width: 252px;
     height: 64px;
-    padding: 15px 30px;
+    padding: 15px 15px;
 }
 #blog-btn {
+    border: 1px solid #DD0000;
     background-color: #DD0000;
     color: white;
 }
@@ -141,6 +143,7 @@ footer {
     flex-direction: column;
     align-items: center;
     height: 400px;
+    width: 100%;
     margin-top: 90px;
     padding: 40px;
     
@@ -165,24 +168,98 @@ footer {
 /* for mobile device */
 
 @media only screen and (max-width:600px) {
+    h1 {
+        font-size: 2.2em;
+    }
+    h3 {
+        padding: 15px;
+    }
     .top-area {
-        flex-direction: column;
         width: 100%;
+        height: auto;
+        padding: 20px 30px 0px 30px;
+        margin-bottom: 5px 0px;
+        flex-direction: column;
+        text-align: center;
+    }
+    .ellipsis {
+        
+        width: 350px;
+        padding: 15px 20px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;  
+    }
+
+    .top-left, .top-right{
+        width: 100%;
+        margin: auto;
+        padding-top: 20px;
         
     }
-    .top-left, .top-right{
+    .top-right img {
         width: 100%;
     }
     .main-part {
         flex-direction: column;
+        align-items: center;
+        margin-top: 5px;
+    }
+    .left-nav{
+        margin: 0;
+    }
+    .list-box{
+        background-color: white;
     }
     .right-main {
         grid-template-columns: repeat(1, 1fr);
+        margin-left: 0px;
     }
-
+    footer {
+        margin-top: 25px;
+    }
 
     .bot-list ul {
         flex-direction: column;
         text-align: center;
+    }
+    .bot-list ul>li {
+        padding: 5px;
+    }
+}
+
+/* For tablet */
+@media only screen and (min-width:601px) and (max-width:768px) {
+    h1 {
+        font-size: 2em;
+    }
+    .top-area {
+        width: 734px;
+        height: 398px
+    }
+
+    .main-part {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 5px;
+    }
+    .left-nav{
+        margin: 0;
+        width: 100%;
+    }
+    .list-box {
+        flex-direction: row;
+        height: auto;
+        width: 95%;
+        background-color: white;
+        margin-bottom: 10px;
+    }
+    .right-main {
+        grid-template-columns: repeat(2, 1fr);
+        margin-left: 0px;
+    }
+    .blog-box {
+        width: 350px;
+        height: 415px;
     }
 }
